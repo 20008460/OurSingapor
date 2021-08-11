@@ -108,10 +108,10 @@ public class ModifyIsland extends AppCompatActivity {
                 AlertDialog.Builder myBuilder = new AlertDialog.Builder(ModifyIsland.this);
 
                 myBuilder.setTitle("Danger");
-                myBuilder.setMessage("Are you sure you want to discard the changes " + data.getName());
+                myBuilder.setMessage("Are you sure you want to discard the changes " );
                 myBuilder.setCancelable(false);
 
-                myBuilder.setNegativeButton("Delete", new DialogInterface.OnClickListener() {
+                myBuilder.setNegativeButton("Discard", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent i = new Intent(ModifyIsland.this,
@@ -121,7 +121,7 @@ public class ModifyIsland extends AppCompatActivity {
                     }
                 });
 
-                myBuilder.setPositiveButton("Cancel" , null);
+                myBuilder.setPositiveButton("Do not discard" , null);
 
                 AlertDialog myDialog = myBuilder.create();
                 myDialog.show();

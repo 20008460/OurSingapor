@@ -59,8 +59,8 @@ public class CustomAdapter extends ArrayAdapter {
         rbStar.setRating(currentVersion.getStars());
 
         int year = currentVersion.getKm();
-        if (year >= 2019) {
-            ivNew.setImageResource(R.drawable.newsong);
+        if (year >= 4) {
+            ivNew.setImageResource(R.drawable.singapore);
         } else {
             ivNew.setVisibility(View.INVISIBLE);
         }
